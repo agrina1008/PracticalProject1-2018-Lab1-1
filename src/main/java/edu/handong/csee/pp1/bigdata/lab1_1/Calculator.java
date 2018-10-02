@@ -69,6 +69,7 @@ public class Calculator {
 		print("SUB:" , this.subtract(firstIntArg, secondIntArg));
 		print("*:" , multiply(firstIntArg, secondIntArg));
 		print("DV:" , (int)divide(firstIntArg,secondIntArg));
+		print("MOD:" , (int)mod(firstIntArg,secondIntArg));
 	}
 
 	
@@ -109,8 +110,9 @@ public class Calculator {
 	}
 
 	int mod(int first, int second) {
-		// TODO implement the body of this method
-		return 0;
+		countForAnyCompution++;
+		localCount++;
+		return first%second;
 	}
 
 	static int getCount() {
