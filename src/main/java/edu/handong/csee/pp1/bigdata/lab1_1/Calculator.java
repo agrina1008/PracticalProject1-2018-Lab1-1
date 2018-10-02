@@ -99,9 +99,12 @@ public class Calculator {
 		return first * second;
 	}
 
-	int divide(int first, int second) {
+	double divide(int first, int second) {
 		countForAnyCompution++;
 		localCount++;
+		if(second == 0) {
+			return Double.NaN;
+		}
 		return first / second;
 	}
 
